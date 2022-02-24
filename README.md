@@ -3,7 +3,15 @@
 * Launch Dota2Patcher, select `[1] Patch All` or desired function;
 * To remove, select `[5] Revert Patches`;
 
-## NEW: FREE DOTA PLUS
+## NEW: Auto Accept Founded Match
+vpk-mod to automatically accept founded match.
+### How To:
+* Download [pak01_dir.vpk](https://github.com/Wolf49406/Dota2Patcher/blob/master/pak01_dir.vpk);
+* Create `\dota 2 beta\game\auto_accept\` folder;
+* Put pak01_dir.vpk to `auto_accept` folder;
+* Add `Game auto_accept` & `Mod auto_accept` to gameinfo.gi ([Described below](https://github.com/Wolf49406/Dota2Patcher#how-to-2));
+
+## FREE DOTA PLUS
 Now Patcher can unlock Dota Plus! Yes, completely free and forever.
 
 ![image](https://user-images.githubusercontent.com/26302888/152439546-eb87ff23-3015-49cf-937a-623497f5bb8c.png)
