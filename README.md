@@ -6,7 +6,7 @@
 ## NEW: Auto Accept Founded Match
 vpk-mod to automatically accept founded match.
 ### How To:
-* Download [pak01_dir.vpk](https://github.com/Wolf49406/Dota2Patcher/blob/master/pak01_dir.vpk);
+* Download [pak01_dir.vpk](https://github.com/Wolf49406/Dota2Patcher/raw/master/pak01_dir.vpk);
 * Create `\dota 2 beta\game\auto_accept\` folder;
 * Put pak01_dir.vpk to `auto_accept` folder;
 * Add `Game auto_accept` & `Mod auto_accept` to gameinfo.gi ([Described below](https://github.com/Wolf49406/Dota2Patcher#how-to-2));
