@@ -4,5 +4,5 @@ local EnableConvars = function(s)
 end
 
 if SendToServerConsole then
-  ListenToGameEvent("dota_player_pick_hero", EnableConvars, nil)
+  ListenToGameEvent("player_connect_full", EnableConvars, nil)
 end
