@@ -3,6 +3,8 @@
 * Launch Dota2Patcher, select `[1] Patch All` or desired function;
 * To remove, select `[5] Revert Patches`;
 
+**NOTICE: You need to patch after almost every update of the game client!**
+
 ## NEW: Auto Accept Founded Match
 vpk-mod to automatically accept founded match.
 ### How To:
