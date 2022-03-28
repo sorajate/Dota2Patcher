@@ -49,11 +49,7 @@ void DrawMenu() {
 }
 
 int main() {
-	if (Patcher::CheckUpdate()) {
-		std::cout << "Update required" << std::endl;
-		system("pause");
-		return 0;
-	}
+	Patcher::CheckUpdate();
 
     if (!Paths::get_dota_path(&Globals::dota_path)) {
         system("pause");

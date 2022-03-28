@@ -25,10 +25,20 @@ bool UpdateRequired() {
 	return false;
 }
 
-bool Patcher::CheckUpdate() {
-	if (!UpdateRequired())
-		return false;
-
-	ShellExecuteA(0, 0, "https://github.com/Wolf49406/Dota2Patcher/releases/latest", 0, 0, SW_SHOW);
-	return true;
+void Patcher::CheckUpdate() {
+	std::stringstream out;
+	CURL* curl = curl_easy_init();
+	curl_easy_setopt(curl, CURLOPT_URL, "https://raw.githubusercontent.com/Wolf49406/Dota2Patcher/master/version.txt");
+	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteRemoteString);
+	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &out);
+	CURLcode CURLresult = curl_easy_perform(curl);
+	std::string remote_version = out.str();
+	
+	if (strcmp(remote_version.c_str(), Globals::local_version.c_str())) {
+		std::cout << "Update required!" << std::endl;
+		std::cout << "Local version: " << Globals::local_version << "\nRemote version: " << remote_version << std::endl;
+		std::cout << "Download latest release here: \nhttps://github.com/Wolf49406/Dota2Patcher/releases/latest" << std::endl;
+		std::cout << "Or press any key to continue" << std::endl;
+		system("pause");
+	}
 }
