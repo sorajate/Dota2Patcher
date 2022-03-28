@@ -10,21 +10,6 @@ size_t WriteRemoteString(void* ptr, size_t size, size_t nmemb, void* stream) {
 	return size * nmemb;
 }
 
-bool UpdateRequired() {
-	std::stringstream out;
-	CURL* curl = curl_easy_init();
-	curl_easy_setopt(curl, CURLOPT_URL, "https://raw.githubusercontent.com/Wolf49406/Dota2Patcher/master/version.txt");
-	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteRemoteString);
-	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &out);
-	CURLcode CURLresult = curl_easy_perform(curl);
-	std::string remote_version = out.str();
-
-	if (strcmp(remote_version.c_str(), Globals::local_version.c_str()))
-		return true;
-
-	return false;
-}
-
 void Patcher::CheckUpdate() {
 	std::stringstream out;
 	CURL* curl = curl_easy_init();
@@ -32,6 +17,12 @@ void Patcher::CheckUpdate() {
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteRemoteString);
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &out);
 	CURLcode CURLresult = curl_easy_perform(curl);
+
+	if (CURLresult != CURLE_OK) {
+		std::cout << "Update check error! Code => " << CURLresult << std::endl;
+		return;
+	}
+
 	std::string remote_version = out.str();
 	
 	if (strcmp(remote_version.c_str(), Globals::local_version.c_str())) {
