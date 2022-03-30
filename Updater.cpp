@@ -16,6 +16,7 @@ void Patcher::CheckUpdate() {
 	curl_easy_setopt(curl, CURLOPT_URL, "https://raw.githubusercontent.com/Wolf49406/Dota2Patcher/master/version.txt");
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteRemoteString);
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &out);
+	curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0);
 	CURLcode CURLresult = curl_easy_perform(curl);
 
 	if (CURLresult != CURLE_OK) {
@@ -29,7 +30,6 @@ void Patcher::CheckUpdate() {
 		std::cout << "Update required!" << std::endl;
 		std::cout << "Local version: " << Globals::local_version << "\nRemote version: " << remote_version << std::endl;
 		std::cout << "Download latest release here: \nhttps://github.com/Wolf49406/Dota2Patcher/releases/latest" << std::endl;
-		std::cout << "Or press any key to continue" << std::endl;
 		system("pause");
 	}
 }
