@@ -5,7 +5,10 @@
 
 **NOTICE: You need to patch after almost every update of the game client!**
 
-## NEW: Auto Accept Founded Match
+## Want some more? 
+**[Take a look at my (partially free) cheat!](https://vk.com/crimsondota)**
+
+## Auto Accept Founded Match
 vpk-mod to automatically accept founded match.
 ### How To:
 * Download [pak01_dir.vpk](https://github.com/Wolf49406/Dota2Patcher/raw/master/pak01_dir.vpk);
