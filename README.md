@@ -6,7 +6,22 @@
 **NOTICE: You need to patch after almost every update of the game client!**
 
 ## Want some more? 
-**[Take a look at my (partially free) cheat!](https://vk.com/crimsondota)**
+**[Take a look at my (partially free) cheat!](https://vk.com/crimsondota)**  
+Free version includes:
+* True Sight Detection
+* Enemy Linken's Sphere Notification
+* Enemy Illusion Detection
+* Roshan Timer
+* Enemy HP \ Mana \ Mana Bar
+* Camera Distance Changer
+* fog_enable
+* fow_client_nofiltering
+* dota_use_particle_fow
+* Dota Plus Unlock
+* Game Auto Accept
+* Creeps LastHit Marker
+* Weather Changer
+* River Vials Changer
 
 ## Auto Accept Founded Match
 vpk-mod to automatically accept founded match.
@@ -17,7 +32,7 @@ vpk-mod to automatically accept founded match.
 * Add `Game auto_accept` & `Mod auto_accept` to gameinfo.gi ([Described below](https://github.com/Wolf49406/Dota2Patcher#how-to-2));
 
 ## FREE DOTA PLUS
-Now Patcher can unlock Dota Plus! Yes, completely free and forever.
+Unlock Dota Plus -- completely free and forever!
 
 ![image](https://user-images.githubusercontent.com/26302888/152439546-eb87ff23-3015-49cf-937a-623497f5bb8c.png)
 
