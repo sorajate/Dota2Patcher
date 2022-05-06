@@ -8,6 +8,7 @@
 ## Want some more? 
 **[Take a look at my (partially free) cheat!](https://vk.com/crimsondota)**  
 Free version includes:
+* Range Display -- Blink, Exp, Towers
 * Ability ESP (Sun Strike, Torrent etc)
 * True Sight Detection
 * Enemy Linken's Sphere Notification
