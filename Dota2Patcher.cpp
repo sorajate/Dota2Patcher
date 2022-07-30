@@ -3,7 +3,7 @@
 
 bool Silent = false;
 
-void Output(const char* text) {
+void Patcher::Output(const char* text) {
 	if (Silent)
 		return;
 	std::cout << text << std::endl;
@@ -68,7 +68,7 @@ int main(int argc, char* argv[]) {
         return 0;
     }
 
-	if (argc >= 1) {
+	if (argc > 1) {
 		int Iterator = 1;
 		std::string IsSilentFlag = argv[1];
 
@@ -77,7 +77,7 @@ int main(int argc, char* argv[]) {
 			Iterator++;
 		}
 
-		for (; Iterator < argc; Iterator++) {
+		for (Iterator; Iterator < argc; Iterator++) {
 			std::string ArgStr = argv[Iterator];
 			int Arg = std::stoi(ArgStr);
 			Patcher::SwitchCommand(abs(Arg));

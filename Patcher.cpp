@@ -76,7 +76,7 @@ bool Patcher::patch_dota_plus(bool revert) {
 
     int dota_plus_patch_offset = Patcher::find_offset(client_path, Globals::dota_plus_pattern, sizeof(Globals::dota_plus_pattern));
     if (!dota_plus_patch_offset) {
-        std::cout << "[-] Dota Plus Unlock Offset is NULL!" << std::endl;
+        Output("[-] Dota Plus Unlock Offset is NULL!");
         return false;
     }
 
@@ -97,7 +97,7 @@ bool Patcher::patch_sv_cheats(bool revert) {
 
     int engine_patch_offset = Patcher::find_offset(engine_path, Globals::sv_cheats_pattern, sizeof(Globals::sv_cheats_pattern));
     if (!engine_patch_offset) {
-        std::cout << "[-] Sv_cheats Bypass Offset is NULL!" << std::endl;
+        Output("[-] Sv_cheats Bypass Offset is NULL!");
         return false;
     }
 
@@ -119,7 +119,7 @@ bool Patcher::patch_gameinfo(bool revert) {
 
     int client_patch_offset = Patcher::find_offset(client_path, Globals::gameinfo_pattern, sizeof(Globals::gameinfo_pattern));
     if (!client_patch_offset) {
-        std::cout << "[-] Gameinfo Bypass Offset is NULL!" << std::endl;
+        Output("[-] Gameinfo Bypass Offset is NULL!");
         return false;
     }
 
