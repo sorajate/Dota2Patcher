@@ -1,7 +1,8 @@
 ### How To:
 * Download [latest release](https://github.com/Wolf49406/Dota2Patcher/releases/latest);
 * Launch Dota2Patcher, select `[1] Patch All` or desired function;
-* To remove, select `[5] Revert Patches`;
+* To remove, select `[5] Revert Patches`;  
+* Or you can use some launch params. Take a look at https://github.com/Wolf49406/Dota2Patcher/issues/24
 
 **NOTICE: You need to patch after almost every update of the game client!**
 
