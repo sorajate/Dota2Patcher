@@ -8,6 +8,8 @@ namespace Paths {
 }
 
 namespace Patcher {
+	void DrawMenu();
+	void SwitchCommand(int USER_INPUT);
 	void CheckUpdate();
 	int find_offset(char* array, int array_length, BYTE* pattern, int pattern_length);
 	int find_offset(std::string file_path, BYTE* pattern, int pattern_size);
