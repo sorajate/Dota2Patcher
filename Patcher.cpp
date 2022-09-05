@@ -66,6 +66,8 @@ void Patcher::apply_patch(std::string file_path, int patch_offset, BYTE replace[
 
 // client.dll - Dota Plus unlock
 bool Patcher::patch_dota_plus(bool revert) {
+    return true;
+
     std::string client_path = Globals::dota_path + "dota\\bin\\win64\\client.dll";
 
     BYTE Replace[] = { 0x70 };
@@ -91,7 +93,7 @@ bool Patcher::patch_sv_cheats(bool revert) {
 
     BYTE Replace[] = { 0xEB };
     if (revert) {
-        Globals::sv_cheats_pattern[0] = { 0xEB };
+        Globals::sv_cheats_pattern[3] = { 0xEB };
         Replace[0] = 0x74;
     }
 
@@ -101,7 +103,7 @@ bool Patcher::patch_sv_cheats(bool revert) {
         return false;
     }
 
-    Patcher::apply_patch(engine_path, engine_patch_offset, Replace, sizeof(Replace));
+    Patcher::apply_patch(engine_path, engine_patch_offset + 3, Replace, sizeof(Replace));
 
     return true;
 }
