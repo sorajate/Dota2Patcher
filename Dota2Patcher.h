@@ -8,7 +8,7 @@ namespace Paths {
 }
 
 namespace Patcher {
-	void Output(const char* text);
+	void Output(const char* text, ...);
 	void DrawMenu();
 	void SwitchCommand(int USER_INPUT);
 	void CheckUpdate();
@@ -23,7 +23,7 @@ namespace Patcher {
 }
 
 namespace Globals {
-	inline std::string local_version = "3.0.5.4";
+	inline std::string local_version = "3.0.5.5";
 	inline std::string dota_path;
 
 	inline BYTE dota_plus_pattern[] = { 0xBF, 0xFF, 0xFF, 0xFF, 0xFF, 0xE8, 0x00, 0x00, 0x00, 0x00, 0x48, 0x85, 0x00, 0x75, 0x00, 0x48, 0x8B, 0x00, 0x00, 0x00, 0x00, 0x00, 0x48, 0x8B, 0x00, 0x00, 0x83 };

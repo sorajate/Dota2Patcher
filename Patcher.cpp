@@ -66,7 +66,8 @@ void Patcher::apply_patch(std::string file_path, int patch_offset, BYTE replace[
 
 // client.dll - Dota Plus unlock
 bool Patcher::patch_dota_plus(bool revert) {
-    return true;
+    Output("[!] Dota Plus Unlock is temporary disabled");
+    return false;
 
     std::string client_path = Globals::dota_path + "dota\\bin\\win64\\client.dll";
 

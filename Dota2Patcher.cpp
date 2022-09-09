@@ -3,7 +3,7 @@
 
 bool Silent = false;
 
-void Patcher::Output(const char* text) {
+void Patcher::Output(const char* text, ...) {
 	if (Silent)
 		return;
 	std::cout << text << std::endl;
