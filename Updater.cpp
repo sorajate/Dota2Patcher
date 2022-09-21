@@ -1,4 +1,5 @@
 #include <windows.h>
+#include <sstream>
 #include <shellapi.h>
 #include <curl/curl.h>
 #include <thread>

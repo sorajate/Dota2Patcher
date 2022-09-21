@@ -34,7 +34,7 @@ vpk-mod to automatically accept founded match.
 * Put pak01_dir.vpk to `auto_accept` folder;
 * Add `Game auto_accept` & `Mod auto_accept` to gameinfo.gi ([Described below](https://github.com/Wolf49406/Dota2Patcher#how-to-2));
 
-## FREE DOTA PLUS (temporary disabled)
+## FREE DOTA PLUS
 Unlock Dota Plus -- completely free and forever!
 
 ![image](https://user-images.githubusercontent.com/26302888/152439546-eb87ff23-3015-49cf-937a-623497f5bb8c.png)
