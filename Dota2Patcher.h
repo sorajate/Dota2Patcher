@@ -23,10 +23,10 @@ namespace Patcher {
 }
 
 namespace Globals {
-	inline std::string local_version = "3.0.5.7";
+	inline std::string local_version = "3.0.5.8";
 	inline std::string dota_path;
 
 	inline BYTE dota_plus_pattern[] = { 0x88, 0x43, 0x00 , 0xE9, 0x00, 0x00, 0x00, 0x00, 0x83, 0xF8 };
 	inline BYTE sv_cheats_pattern[] = { 0xF6, 0xC1, 0x01, 0x74, 0x5C };
-	inline BYTE gameinfo_pattern[] = { 0x80, 0x7F, 0x39, 0x00, 0x34 };
+	inline BYTE gameinfo_pattern[] = { 0x80, 0x7F, 0x39, 0x00, 0x74 };
 }
