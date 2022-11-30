@@ -121,7 +121,7 @@ bool Patcher::patch_gameinfo(bool revert) {
         return false;
     }
 
-    Patcher::apply_patch(client_path, client_patch_offset + 4, Replace, sizeof(Replace));
+    Patcher::apply_patch(client_path, client_patch_offset, Replace, sizeof(Replace));
 
     return true;
 }
